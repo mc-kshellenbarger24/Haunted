@@ -12,10 +12,24 @@
         <img draggable = "false" NoteID = "3:8" class = "note" id = "note4" src = "../Imgs/TornPage.png">
         <img draggable = "false" NoteID = "3:9" class = "note" id = "note5" src = "../Imgs/TornPage.png">
         <div id = "Door" Link = "/index.html"></div>
-    </div>
-    <div id = "GrabbedNote">
-        <img draggable = "false" id = "GrabbedNoteImg" src = "../Imgs/TornPage.png">
-        <p id = "GrabbedNoteText"></p>
+        <div id = "InvBody">
+            <div id ="Inv"></div>  
+            <div id = "InvCloseButton">
+                <svg id = "InvCloseButtonSVG" viewBox="-1.5 -0.4 1.4 1">
+                    <path d="M-1 0-1-.5-1 .5-.4 0-1-.5Z" fill="gray"></path>
+                </svg>
+            </div> 
+        </div>
+        <div id = "InvOpenButton">
+            <svg id = "InvOpenButtonSVG" viewBox="-1.5 -0.4 1.4 1">
+                <path d="M-1 0-1-.5-1 .5-.4 0-1-.5Z" fill="gray"></path>
+            </svg>
+        </div> 
+        <div id ="OpenedNote">
+            <img draggable = "false" id = "OpenedNoteImg" src = "../Imgs/TornPage.png">
+            <p id = "OpenedNoteText"></p>
+        </div>
+
     </div>
     <script src = "../JS/Index.js"></script>
 </body>

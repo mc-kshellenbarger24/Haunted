@@ -10,13 +10,26 @@
     <div id = "Background">
         <div draggable = "false" id = "Door" Link = "/HTML/index1.html"></div>
         <img draggable = "false" NoteID = "0" id = "note" class = "note" src = "./Imgs/TornPage.png" alt = "BRUH">
-            
+        <div id = "InvBody">
+            <div id ="Inv"></div>  
+            <div id = "InvCloseButton">
+                <svg id = "InvCloseButtonSVG" viewBox="-1.5 -0.4 1.4 1">
+                    <path d="M-1 0-1-.5-1 .5-.4 0-1-.5Z" fill="gray"></path>
+                </svg>
+            </div> 
+        </div>
+        <div id = "InvOpenButton">
+            <svg id = "InvOpenButtonSVG" viewBox="-1.5 -0.4 1.4 1">
+                <path d="M-1 0-1-.5-1 .5-.4 0-1-.5Z" fill="gray"></path>
+            </svg>
+        </div> 
+        <div id ="OpenedNote">
+            <img draggable = "false" id = "OpenedNoteImg" src = "../Imgs/TornPage.png">
+            <p id = "OpenedNoteText"></p>
+        </div>
+
     </div>
-    <div id = "GrabbedNote">
-        <img draggable = "false" id = "GrabbedNoteImg" src = "./Imgs/TornPage.png">
-        <p id = "GrabbedNoteText"></p>
-    </div>
-    
+
     <script src = "https://accounts.google.com/gsi/client"  async defer></script>
     <div id = "g_id_onload"
         data-client_id = "4331565397-pplqj2jubff9854inc56n37vigfsnjj7.apps.googleusercontent.com"
@@ -35,7 +48,7 @@
         data-logo_alignment = "left">
     </div>
 
-  
+
 
     <script src = "./JS/Index.js"></script>
 </body>

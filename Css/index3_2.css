@@ -94,34 +94,87 @@ body{
     z-index:-1;
 }
 
-
-#GrabbedNote{
+#InvBody{
+    transform: translate(100%,-100%);
+    width: 11vw;
+    height: 100vh;
+    top: 100%;
     position: absolute;
-    width: 100vw;
-    height:100vh;
-    transform: translate(50%, -50%);
+    right: 100%;
+    transition: width 2s;
+    z-index: 1;
+}
+
+#Inv{
+    width: 68%;
+    height: 100%;
+    left: 0%;
+    position: relative;
+    right: 100%;
+    display: block;
+    background: #202020;
+    border-radius: 0px 20px 20px 0px;
+    transition: width 0.8s;
+}
+
+.InvNotes{
+    position: relative;
+    width: 40%;
+    cursor: pointer;
+}
+
+#InvCloseButton{
+    position: relative;
+    width: 30%;
+    height: 10%;
+    left: 67.6%;
+    bottom: 50%;
+    cursor: pointer;
+    background: #3e3e3e;
+    border-radius: 0px 20px 20px 0px;
+    transition: width 0.8s;
+}
+
+#InvCloseButtonSVG{
+    width:100%;
+    height:100%;
+    transform: rotate(180deg);
+}
+
+#InvOpenButton{
+    position: absolute;
+    width: 3vw;
+    height: 9vh;
+    top: 58.6%;
+    right: 100%;
+    cursor: pointer;
+    background: #3e3e3e;
+    border-radius: 0px 20px 20px 0px;
+    transition: width 0.8s;
+    transform: translate(100%, -100%);
+}
+
+#InvOpenButtonSVG{
+    width:100%;
+    height:100%;
+}
+#OpenedNote{
+    width: fit-content;
+    position: absolute;
+    transform: translate(50%,-50%);
     top: 50%;
-    right: 50%;
+    right: 150%;
     opacity: 0;
-    transition: opacity 2s;
-    z-index:-1;
+    transition: opacity 0.4s;
 }
 
-#GrabbedNoteImg{
-    color: white;
-    position: absolute;
-    transform: translate(50%, -50%);
-    font-size:27px;
-    width: 53vw;
-    top: 50%;
-    right: 50%;
-    height: auto;
-    text-align: center;
-    overflow-wrap: break-word;
+#OpenedNoteImg{
+    width: 60vw;
+    cursor: pointer;
 }
 
-#GrabbedNoteText{
-    color: white;
+#OpenedNoteText{
+    color: #fffef0a8;
     position: absolute;
     transform: translate(50%, -50%);
     font-size:27px;
@@ -132,7 +185,6 @@ body{
     text-align: center;
     overflow-wrap: break-word;
 }
-
 @keyframes Anim{
     0% {
         cursor:help;

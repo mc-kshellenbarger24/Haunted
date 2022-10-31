@@ -14,10 +14,24 @@
         <img draggable = "false" NoteID = "2:9" class = "note" src = "../Imgs/TornPage.png" id = "note6">
         <img draggable = "false" NoteID = "2:10" class = "note" src = "../Imgs/TornPage.png" id = "note7">
         <div id = "Door" Link= "/HTML/stair.html"></div>
-    </div>
-    <div id = "GrabbedNote">
-        <img draggable = "false" id = "GrabbedNoteImg" src = "../Imgs/TornPage.png">
-        <p id = "GrabbedNoteText"></p>
+        <div id = "InvBody">
+            <div id ="Inv"></div>  
+            <div id = "InvCloseButton">
+                <svg id = "InvCloseButtonSVG" viewBox="-1.5 -0.4 1.4 1">
+                    <path d="M-1 0-1-.5-1 .5-.4 0-1-.5Z" fill="gray"></path>
+                </svg>
+            </div> 
+        </div>
+        <div id = "InvOpenButton">
+            <svg id = "InvOpenButtonSVG" viewBox="-1.5 -0.4 1.4 1">
+                <path d="M-1 0-1-.5-1 .5-.4 0-1-.5Z" fill="gray"></path>
+            </svg>
+        </div> 
+        <div id ="OpenedNote">
+            <img draggable = "false" id = "OpenedNoteImg" src = "../Imgs/TornPage.png">
+            <p id = "OpenedNoteText"></p>
+        </div>
+
     </div>
     <script src = "../JS/Index.js"></script>
 </body>

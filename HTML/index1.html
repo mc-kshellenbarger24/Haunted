@@ -9,11 +9,26 @@
         <img draggable = "false" id = "Door" Link = "/HTML/index2.html" src = "../Imgs/Jumpscareindex1.png" alt = "BRUH">
         <img draggable = "false" id = "scare" class = "Door" Link = "/HTML/index1_2.html" Count = "1:1" class = "JumpScare" src = "../Imgs/Shadow.png" alt = "Jumpscare" >
         <img draggable = "false" NoteID = "1:2" class = "note" id = "note" src = "../Imgs/TornPage.png" alt = "BRUH">
+        <div id = "InvBody">
+            <div id ="Inv"></div>  
+            <div id = "InvCloseButton">
+                <svg id = "InvCloseButtonSVG" viewBox="-1.5 -0.4 1.4 1">
+                    <path d="M-1 0-1-.5-1 .5-.4 0-1-.5Z" fill="gray"></path>
+                </svg>
+            </div> 
+        </div>
+        <div id = "InvOpenButton">
+            <svg id = "InvOpenButtonSVG" viewBox="-1.5 -0.4 1.4 1">
+                <path d="M-1 0-1-.5-1 .5-.4 0-1-.5Z" fill="gray"></path>
+            </svg>
+        </div> 
+        <div id ="OpenedNote">
+            <img draggable = "false" id = "OpenedNoteImg" src = "../Imgs/TornPage.png">
+            <p id = "OpenedNoteText"></p>
+        </div>
+
     </div>   
-    <div id = "GrabbedNote">
-        <img draggable = "false" id = "GrabbedNoteImg" src = "../Imgs/TornPage.png">
-        <p id = "GrabbedNoteText"></p>
-    </div>
+
     <script src = "../JS/Index.js"></script>
 </body>
 </html>
