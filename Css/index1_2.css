@@ -33,18 +33,45 @@ body{
     top: 66%;
     left: 36%;
     width: 3.8vw;
-    position:
-    absolute;
-    
+    position:absolute;
     z-index:-1;
     transform: translate(50%, -50%) rotate3d(2,5,3,180deg);
 }
-#note1{
-    top: 40%;
-    left: -1%;
-    width: 3.8vw;
-    position: absolute;
-    transform: translate(50%, -50%) rotate3d(95,5,3,254deg);
-    filter: brightness(0.8);
 
+#GrabbedNote{
+    position: absolute;
+    width: 100vw;
+    height:100vh;
+    transform: translate(50%, -50%);
+    top: 50%;
+    right: 50%;
+    opacity: 0;
+    transition: opacity 2s;
+    z-index:-1;
+}
+
+#GrabbedNoteImg{
+    color: white;
+    position: absolute;
+    transform: translate(50%, -50%);
+    font-size:27px;
+    width: 53vw;
+    top: 50%;
+    right: 50%;
+    height: auto;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+#GrabbedNoteText{
+    color: white;
+    position: absolute;
+    transform: translate(50%, -50%);
+    font-size:27px;
+    width: 37vw;
+    top: 50%;
+    right: 50%;
+    height: auto;
+    text-align: center;
+    overflow-wrap: break-word;
 }

@@ -17,3 +17,62 @@ StringArray.forEach(element => {
 });
 
 
+
+
+if(!NotedIsOpen){
+    GrabbedNote = document.createElement("div")
+    console.log(Decoder.decode(Note))   
+    if(NoteID == "0"){
+            GrabbedNote.innerHTML = `
+           
+            <p style = "	
+                color: white;
+                position: absolute;
+                transform: translate(50%, -50%);
+                font-size:27px;
+                width: 37vw;
+                top: 50%;
+                right: 50%;
+                height: auto;
+                text-align: center;
+                overflow-wrap: break-word;" id = "GrabbedNoteText">`+Decoder.decode(Note)+`</p>
+        `
+    }else{
+        GrabbedNote.innerHTML = `
+        <img style = "width:100%" draggable = "false" id = "GrabbedNoteImg" src = "../Imgs/TornPage.png">
+        <p style = "	
+" id = "GrabbedNoteText">`+Decoder.decode(Note)+`</p>
+    `
+    }
+    GrabbedNote.setAttribute("id","GrabbedNote")
+    GrabbedNote.setAttribute("style",`
+        position: absolute;
+        width: 62vw;
+        transform: translate(50%, -50%);
+        top: 50%;
+        right: 50%;
+        opacity: 0;
+        transition: opacity 2s;
+    `)
+    Background.append(GrabbedNote);
+    NoteData[NoteID].pop(Rand)
+    NoteCount = NoteCount+1
+
+    setTimeout(function(){
+        GrabbedNote.style.opacity = "1"
+        setTimeout(function(){
+            NotedIsOpen = true;
+        },2000)
+    },20)
+}
+
+GrabbedNote.addEventListener("click",function(){
+        if(NotedIsOpen){
+            GrabbedNote.style.opacity = "0"
+            setTimeout(function(){
+                GrabbedNote.remove()
+                NotedIsOpen = false;
+            },2001)
+        }
+
+})
