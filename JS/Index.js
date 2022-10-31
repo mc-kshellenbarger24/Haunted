@@ -243,6 +243,7 @@ function HandelNotes(Data){
         var Rand = Math.floor((Math.random() * (Max - Min) + Min))
         var Note = NoteData[NoteID][Rand]["Data"]
         GrabbedNote = document.createElement("div")
+        console.log(Decoder.decode(Note))   
         if(NoteID == "0"){
                 GrabbedNote.innerHTML = `
                 <img style = "width:100%" draggable = "false" id = "GrabbedNoteImg" src = "./Imgs/TornPage.png">
