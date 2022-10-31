@@ -217,7 +217,7 @@ function OOFOFOF(){
         GrabbedNote = document.createElement("p")
         GrabbedNote.innerHTML = Decoder.decode(Story)
         GrabbedNote.setAttribute("style",`
-            color: rgb(255 255 255 / 59%);
+            color: rgb(255 255 255);
             position: absolute;
             transform: translate(50%, -50%);
             font-size: 14px;
