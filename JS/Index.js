@@ -217,18 +217,18 @@ function OOFOFOF(){
         GrabbedNote = document.createElement("p")
         GrabbedNote.innerHTML = Decoder.decode(Story)
         GrabbedNote.setAttribute("style",`
-            color: #ffffff96;
+            color: rgb(255 255 255 / 59%);
             position: absolute;
             transform: translate(50%, -50%);
-            font-size: 17px;
+            font-size: 14px;
             width: 95%;
             top: 50%;
             right: 50%;
             height: auto;
             text-align: center;
             overflow-wrap: break-word;
-            opacity: 0;
-            transition: opacity 3s;
+            opacity: 1;
+            transition: opacity 3s ease 0s;
         `)
         document.body.append(GrabbedNote);
         Background.style.filter = "brightness(1)";   
