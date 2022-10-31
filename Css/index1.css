@@ -28,17 +28,6 @@ body{
     transition: filter 2s;
 }
 
-#Door{
-    height:160px;
-    position: relative;
-    top:350px;
-    left: -43px;
-    width:65px;
-    opacity: 0;
-    cursor:pointer;
-    z-index:-1;
-}
-/*
 #Door {
     height: 19.3vh;
     position: relative;
@@ -48,41 +37,18 @@ body{
     transform: translate(50%,-50%);
     z-index:-1;
 }
-*/
 
-#scare{
-    position: absolute;
-    top: 86px;
-    width: 100px;
-    opacity: .5;
-    transition:oppacity 30s;
-    cursor:default;
-    z-index:-1;
-}
-/*
 #scare{
     position: absolute;
     top: 34%;
     width: 10vh;
     right: 51%;
     transition: oppacity 30s;
-    background: red;
     transform: translate(50%, -50%);
     z-index:-1;
 }
-*/
-#fakenote{
-    position: absolute;
-    left: 590px;
-    top: 70%;
-    width: 95px;
-    transform: rotate3d(2, 0, 0, 60deg);
-    filter: brightness(0.3);
-    z-index:-1;
-}
 
-/*
-#fakenote {
+#note {
     position: absolute;
     left: 39%;
     top: 73%;
@@ -90,5 +56,6 @@ body{
     transform: rotate3d(2, 0, 0, 60deg) translate(50%,-50%);
     filter: brightness(0.3);
     z-index:-1;
+
 }
-*/
+
