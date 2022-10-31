@@ -39,3 +39,12 @@ body{
     z-index:-1;
     transform: translate(50%, -50%) rotate3d(2,5,3,180deg);
 }
+#note1{
+    top: 40%;
+    left: -1%;
+    width: 3.8vw;
+    position: absolute;
+    transform: translate(50%, -50%) rotate3d(95,5,3,254deg);
+    filter: brightness(0.8);
+
+}
