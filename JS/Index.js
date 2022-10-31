@@ -243,7 +243,23 @@ function HandelNotes(Data){
         var Rand = Math.floor((Math.random() * (Max - Min) + Min))
         var Note = NoteData[NoteID][Rand]["Data"]
         GrabbedNote = document.createElement("div")
-        GrabbedNote.innerHTML = `
+        if(NoteID == "0"){
+                GrabbedNote.innerHTML = `
+                <img style = "width:100%" draggable = "false" id = "GrabbedNoteImg" src = "./Imgs/TornPage.png">
+                <p style = "	
+                    color: white;
+                    position: absolute;
+                    transform: translate(50%, -50%);
+                    font-size:27px;
+                    width: 37vw;
+                    top: 50%;
+                    right: 50%;
+                    height: auto;
+                    text-align: center;
+                    overflow-wrap: break-word;" id = "GrabbedNoteText">`+Decoder.decode(Note)+`</p>
+            `
+        }else{
+            GrabbedNote.innerHTML = `
             <img style = "width:100%" draggable = "false" id = "GrabbedNoteImg" src = "../Imgs/TornPage.png">
             <p style = "	
                 color: white;
@@ -257,6 +273,8 @@ function HandelNotes(Data){
                 text-align: center;
                 overflow-wrap: break-word;" id = "GrabbedNoteText">`+Decoder.decode(Note)+`</p>
         `
+        }
+
         GrabbedNote.setAttribute("id","GrabbedNote")
         GrabbedNote.setAttribute("style",`
             position: absolute;

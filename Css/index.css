@@ -57,18 +57,8 @@ body{
 #note{
     width: 40px;
     position: absolute;
-    top:550px;
-    left:950px;
-    transform: rotate(90deg);
-    z-index:-1;
-}
-/*
-#note{
-    width: 40px;
-    position: absolute;
     top: 60%;
     left: 57%;
     transform: rotate(90deg) translate(50%, -50%);
     z-index:-1;
 }
-*/
