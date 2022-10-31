@@ -241,7 +241,7 @@ function OOFOFOF(){
     
     }
 }
-
+OOFOFOF()
 document.getElementById("InvCloseButton").addEventListener("click",function(){
     InvOpen = !InvOpen
     if(InvOpen){
