@@ -275,7 +275,6 @@ function HandelNotes(Data){
                 overflow-wrap: break-word;" id = "GrabbedNoteText">`+Decoder.decode(Note)+`</p>
         `
         }
-
         GrabbedNote.setAttribute("id","GrabbedNote")
         GrabbedNote.setAttribute("style",`
             position: absolute;
@@ -287,9 +286,14 @@ function HandelNotes(Data){
             transition: opacity 2s;
         `)
         Background.append(GrabbedNote);
+        NoteData[NoteID].pop(Rand)
+        NoteCount = NoteCount+1
+
+
         setTimeout(function(){
             GrabbedNote.style.opacity = "1"
         },20)
+        
         GrabbedNote.addEventListener("click",function(){
             GrabbedNote.style.opacity = "0"
             setTimeout(function(){
@@ -297,8 +301,7 @@ function HandelNotes(Data){
             },2500)
         })
 
-        NoteData[NoteID].pop(Rand)
-        NoteCount = NoteCount+1
+
 
         if(NotesRemoved.lastIndexOf(Data.target.getAttribute("NoteID").split(":")[1]) == -1 ){
             NotesRemoved.push(Data.target.getAttribute("NoteID"))
