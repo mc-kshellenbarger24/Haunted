@@ -29,8 +29,9 @@ body{
 
 .g_id_signin{
     position: absolute;
-    right: 50vw;
-    top:50vh;
+    right: 50%;
+    top:50%;
+    transform: translate(50%,-50%);
     transition: right 2s,top 2s;
 }
 

@@ -279,14 +279,17 @@ if(JSON.parse(sessionStorage.getItem("Login"))["Logined"]){
 
 if(JSON.parse(sessionStorage.getItem("Login"))["Logined"] & LoginButton != null){
     LoginButton.style.opacity = 0;
-    LoginButton.style.top = "0px";
-    LoginButton.style.right = "20px";
+    LoginButton.style.top = "5%";
+    LoginButton.style.right = "11%";
+
+
+
 }
 
 function handleCredentialResponse(Data){
     if(LoginButton){
-        LoginButton.style.top = "0px";
-        LoginButton.style.right = "20px";
+        LoginButton.style.top = "5%";
+        LoginButton.style.right = "11%";    
     }
     Background.style.filter = "blur(0px)";
     sessionStorage.setItem("Login",  JSON.stringify({"Data":Data,"Logined":true}));
