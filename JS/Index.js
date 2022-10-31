@@ -195,7 +195,6 @@ if(JSON.parse(sessionStorage.getItem("Login"))["Logined"]){
     Background.style.filter = "blur(0px)";  
 }
 
-
 if(JSON.parse(sessionStorage.getItem("Login"))["Logined"] & LoginButton != null){
     LoginButton.style.opacity = 0;
 }
@@ -217,7 +216,6 @@ Background.addEventListener("click",(Data)=>{
         if(Data.target.getAttribute("id") == "Door" || Data.target.getAttribute("class") == "Door"){
             window.location.href = Path+Data.target.getAttribute("Link")
         }
-        JumpScares(Data)
         HandelNotes(Data)
     }
 })
@@ -293,15 +291,3 @@ function HandelNotes(Data){
         Data.target.remove()
     }
 }
-
-function JumpScares(Data){
-    if(Data.target.getAttribute("class") == "JumpScare"){
-        console.log("BOO!")
-        if(JumpScareDone.lastIndexOf(Data.target.getAttribute("Count")) == -1 ){
-            JumpScareDone.push(Data.target.getAttribute("Count"))
-            JumpScareCount = JumpScareCount+1
-        }
-        sessionStorage.setItem("JumpScares", JSON.stringify({"JumpScares":JumpScareDone,"Count":JumpScareCount}));
-    }
-}
-

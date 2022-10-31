@@ -29,79 +29,78 @@ body{
 
 }
 #note1{
-	width: 41px;
-    position: absolute;
-    top: 185px;
-    left: 597px;
-    filter: brightness(.5);
-    transform: rotate3d(1, 3, 8, 182deg);
+	width: 2.5vw;
+	position: absolute;
+	top: 20%;
+	left: 35%;
+	filter: brightness(.5);
+	
     z-index:-1;
-
+	transform: translate(50%,-50%) rotate3d(1, 3, 8, 182deg);
 }
 #note2{
-	width: 80px;
-    position: absolute;
-    top: 435px;
-    left: 636px;
-    filter: brightness(.1);
-    transform: rotate3d(1, 1, 1, 253deg);
+	width: 4.8vw;
+	position: absolute;
+	top: 46.7%;
+	left: 37.9%;
+	filter: brightness(.1);
+	
     z-index:-1;
+	transform: translate(10px, 10px) rotate3d(1, 1, 1, 253deg);
 }
 #note3{
-	width: 80px;
-    position: absolute;
-    transform: rotate3d(3, 3, 6, 262deg);
-    top: 193px;
-    left: 261px;
-    filter: hue-rotate(336deg) brightness(0.4);
+	width: 4.8vw;
+	position: absolute;
+	top: 23%;
+	left: 13%;
+	filter: hue-rotate(336deg) brightness(0.4);
     z-index:-1;
+	transform: translate(50%,-50%) rotate3d(3, 3, 6, 262deg);
 }
 #note4{
-	width: 80px;
-    position: absolute;
-    top: 788px;
-    left: 228px;
-    transform: rotate(140deg);
-    filter: brightness(.05);
+	width: 4.8vw;
+	position: absolute;
+	top: 90.4%;
+	left: 15%;
+	filter: brightness(.05);
     z-index:-1;
+	transform: translate(50%, -50%) rotate(140deg);
 }
 #note5{
-	width: 80px;
-    position: absolute;
-    top: 162px;
-    left: 406px;
-    filter: brightness(.7);
-    transform: rotate3d(5, 5, 2, 148deg);
+	width: 4.8vw;
+	position: absolute;
+	top: 34%;
+	left: 22%;
+	filter: brightness(0.4);
+	
     z-index:-1;
-
+	transform: translate(50%,-50%) rotate3d(5, 5, 2, 148deg);
 }
 #note6{
-	width: 80px;
+	width: 3vw;
 	position: absolute;
-	top:201px;
-	transform: rotate(90deg);
-	right:277px;
-	filter: brightness(.6);
+	top: 10%;
+	right: 11%;
+	filter: brightness(0.09);
 	z-index:-1;
+	transform: translate(50%,-50%) rotate(90deg);
 }
 
 #note7{
-	width: 80px;
+	width: 3.8vw;
 	position: absolute;
-	top: 65%;
-	right:468px;
-	transform: rotate3d(250, 5, 9, 293deg);
-	filter:brightness(.3);
-    z-index:-1;
+	top: 68.7%;
+	right: 31.2%;
+	filter: brightness(0.12);
+	transform: translate(50%,-50%) rotate3d(250, 5, 9, 293deg);
 }
 #Door{
 	position: absolute;
-    right: 355px;
-    width: 134px;
-    height: 306px;
-    top: 140px;
-    transform: rotate3d(3, 9, 150, 1deg);
-    z-index: -1;
-    cursor: pointer;
+	right: 25.2%;
+	width: 8.6vw;
+	height: 40.5vh;
+	top: 30%;
+	cursor: pointer;
     z-index:-1;
+	transform: translate(50%,-50%) rotate3d(-67, 59, 60.6, 1deg);
 }

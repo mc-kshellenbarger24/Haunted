@@ -30,20 +30,21 @@ body{
 
 }
 #note{
-    top: 800px;
-    left:50px;
-    filter: brightness(.04);
+    top: 9%;
+    left: 55.6%;
+    filter: brightness(0.24);
     position: absolute;
-    width:100px;
-    z-index:-1;
+    width: 3.3vw;
+    transform: translate(50%,-50%) matrix3d(2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 3);z-index:-1;
 }
 #Door{
-    width: 390px;
-    height: 550px;
+    width: 16.7vw;
+    height: 60vh;
     position: absolute;
-    transform: translate(100%, -100%);
-    top: 68%;
-    left: 15vw;
-    cursor:pointer;
+    top: 35%;
+    left: 32.4%;
+    cursor:
+    pointer;
     z-index:-1;
+    transform: translate(50%,-50%);
 }

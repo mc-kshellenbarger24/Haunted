@@ -4,7 +4,6 @@
 	box-sizing: border-box;
 	text-align: center;
     user-select: none;
-    filter: brightness(0.4);
 }
 html{
 	width:100%;
@@ -16,6 +15,7 @@ html{
 body{
 	min-width:100%;
 	min-height:100%;
+    filter: brightness(0.4);
 }
 #Background{
     position:absolute;
@@ -26,7 +26,7 @@ body{
     height: 100%;
     filter: blur(13px);
     transition: filter 2s;
-	
+    filter: brightness(0.4);
 }
 #blink{
 	height:90%;
@@ -41,47 +41,44 @@ body{
     z-index:-1;
 }
 #note1{
-    width: 90px;
+    width: 3.6vw;
     margin-bottom: 15px;
     position: absolute;
-    left: 404px;
-    top: 77.4%;
-    transform: rotate3d(13, 0, -5, 60deg);
+    left: 23%;
+    top: 83%;
+    
     z-index:-1;
+    transform: translate(50%,-50%) rotate3d(13, 0, -5, 60deg);
 }
 
 #note2{
-    width: 95px;
-    margin-bottom: 15px;
+    width: 6vw;
     position: absolute;
-    left: 1205px;
-    top: 21%;
-    opacity: 1;
-    transition: opacity 2s;
-    transform: rotate3d(193, 0, 0, 22deg);
+    left: 69%;
+    top: 19%;
     filter: brightness(0.33);
     z-index:-1;
+    transform: translate(50%,-50%) rotate3d(193, 0, 0, 22deg);
 }
 
 #note3{
-    width: 43px;
-    margin-bottom: 15px;
+    width: 2.9vw;
     position: absolute;
-    left: 385px;
-    top: 69%;
-    transform: rotate3d(135, -24, 14, 60deg);
+    left: 22.5%;
+    top: 72.6%;
     filter: brightness(0.36);
     z-index:-1;
+    transform: translate(50%,-50%) rotate3d(135, -24, 14, 60deg);
 }
 
 #Door{
     position: absolute;
-    right: 428px;
-    width: 178px;
-    height: 360px;
-    top: 241px;
-    z-index: -1;
+    right: 31.3%;
+    width: 10vw;
+    height: 42.7vh;
+    top: 45%;
     box-shadow: #a36f2252 -4px 0px 20px 19px;
     cursor: pointer;
     z-index:-1;
+    transform: translate(50%,-50%);
 }

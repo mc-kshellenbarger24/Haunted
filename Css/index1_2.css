@@ -30,11 +30,12 @@ body{
 }
 
 #note{
-    top: 550px;
-    left: 750px;
-    width: 70px;
-    position:absolute;
-    z-index: 3;
-    transform: rotate3d(2,5,3,180deg);
+    top: 66%;
+    left: 36%;
+    width: 3.8vw;
+    position:
+    absolute;
+    
     z-index:-1;
+    transform: translate(50%, -50%) rotate3d(2,5,3,180deg);
 }
